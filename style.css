@@ -1,30 +1,50 @@
 body {
-    background-color: #E3F2FD; /* Light Blue - Fresh for Eyes */
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
+    background: #f5f5f5;
+    color: #333;
 }
 
 header {
-    background-color: #1565C0;
+    text-align: center;
+    padding: 50px;
+    background: linear-gradient(to right, #0066ff, #00ccff);
     color: white;
-    padding: 20px;
 }
 
-section {
-    margin: 20px;
-    padding: 20px;
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
 }
 
-.project {
-    background-color: #BBDEFB;
-    padding: 10px;
-    border-radius: 5px;
+h1, h2 {
+    font-weight: bold;
+}
+
+.about, .projects, .contact {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    margin: 20px auto;
+    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.project-card {
+    background: #e0f7fa;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
 footer {
-    background-color: #1565C0;
+    text-align: center;
+    padding: 20px;
+    background: #333;
     color: white;
-    padding: 10px;
 }
