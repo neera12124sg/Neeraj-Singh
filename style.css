@@ -405,6 +405,8 @@ body {
         height: auto;
         position: relative;
         padding: 15px;
+        top: 0; /* Ensure no top offset */
+        left: 0; /* Ensure no left offset */
     }
     
     .sidebar-header {
@@ -427,7 +429,10 @@ body {
     
     .main-content {
         margin-left: 0;
-        padding: 20px;
+        padding: 15px; /* Reduced padding for tighter fit */
+        width: 100%; /* Full width */
+        max-width: 100%; /* Prevent overflow */
+        overflow-x: hidden; /* Clip horizontal overflow */
     }
     
     .sidebar:hover, .sidebar.expanded {
@@ -438,8 +443,23 @@ body {
         display: none;
     }
     
+    .section {
+        padding: 15px; /* Reduced padding for mobile */
+        width: 100%; /* Full width */
+        max-width: 100%; /* Prevent overflow */
+        margin-left: 0; /* Ensure no left offset */
+        margin-right: 0; /* Ensure no right offset */
+    }
+    
     .projects-grid, .achievements-grid, .certificates-grid, .contact-grid {
         grid-template-columns: 1fr;
+    }
+    
+    .education-table {
+        width: 100%; /* Full width */
+        display: block; /* Allow scrolling */
+        overflow-x: auto; /* Horizontal scroll if needed */
+        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
     }
     
     .home-section img {
@@ -451,22 +471,22 @@ body {
         font-size: 2rem;
     }
     
-    /* Added for better About section mobile layout */
+    /* About section mobile layout */
     .home-section {
-        padding: 20px 0; /* Reduced padding for tighter mobile layout */
+        padding: 20px 0; /* Consistent padding */
     }
     
     .home-section p {
-        margin: 10px 0; /* Consistent spacing for description */
-        font-size: 1rem; /* Slightly smaller for better fit */
+        margin: 10px 0;
+        font-size: 1rem;
     }
     
     .section h1:not(.home-section h1) {
-        font-size: 1.8rem; /* Smaller "About Me" heading to differentiate */
-        margin-top: 20px; /* Space above "About Me" heading */
+        font-size: 1.8rem;
+        margin-top: 20px;
     }
     
     .section p:not(.home-section p) {
-        margin-top: 10px; /* Space between About Me paragraphs */
+        margin-top: 10px;
     }
 }
