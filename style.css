@@ -450,4 +450,23 @@ body {
     .home-section h1 {
         font-size: 2rem;
     }
+    
+    /* Added for better About section mobile layout */
+    .home-section {
+        padding: 20px 0; /* Reduced padding for tighter mobile layout */
+    }
+    
+    .home-section p {
+        margin: 10px 0; /* Consistent spacing for description */
+        font-size: 1rem; /* Slightly smaller for better fit */
+    }
+    
+    .section h1:not(.home-section h1) {
+        font-size: 1.8rem; /* Smaller "About Me" heading to differentiate */
+        margin-top: 20px; /* Space above "About Me" heading */
+    }
+    
+    .section p:not(.home-section p) {
+        margin-top: 10px; /* Space between About Me paragraphs */
+    }
 }
